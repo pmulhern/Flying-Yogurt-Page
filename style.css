@@ -1,0 +1,161 @@
+/* Adding the background to all 3 html pages*/
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./Assets/FlyingYogurt_1.png);
+    background-repeat: repeat;
+    background-size: 300px 300px;  /* Made tiles 50% larger */
+}
+    
+    /* Formatting my name on the nav bar*/
+    #brand {
+    
+        font-size: xx-large;
+        margin: 15px, 10px, 15px, 10px;
+        padding: 15px, 10px, 15px, 10px;
+        }
+    
+    /* Adding the Hover Format to the About, Contact Me and Portfolio links on the nav bar*/
+    .nav-link:hover {
+        background-color: #21d192;
+        }
+    
+    /* Adding an Active Format to the About, Contact Me and Portfolio links on the nav bar*/
+    .nav-link:active {
+        font-size: x-large;
+        font-weight: bold;
+        }
+    
+    /* Centers the About Me Card on the About tab*/
+    #about {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    /* Centers the Contact Me Card on the Contact Me tab*/
+    #contact {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    /* Formatting for the Header on the About Me tab*/
+    #about_me {
+        color: #21d192;
+        font-weight: bold;
+        font-size: xx-large;
+        }
+
+    /* Formatting the Live Performance text on the Live Performance tab */
+    #live_performance {
+        color: #da8309;
+        font-weight: bold;
+        font-size: xx-large;
+        }
+    
+    /* Formatting for the Header on the Contact Me tab*/
+    #contact_me {
+        color: #21d192;
+        font-weight: bold;
+        font-size: xx-large;
+        }
+    
+    /* Formatting for the Header on the Portfolio tab*/
+    #portfolio {
+        color: #21d192;
+        font-weight: bold;
+        font-size: xx-large;
+        }
+    
+    /* Formatting the line that separates the headers from the sections on the main cards/ forms*/  
+    hr {
+            display: block;
+            height: 10px;
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 1em 0;
+            padding: 0;
+        }
+
+        .collapsible {
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .toggle {
+            width: 100%;
+            padding: 15px 20px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+        
+        .toggle:hover {
+            background: #34495e;
+        }
+        
+        .toggle::after {
+            content: '▼';
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+        
+        .toggle.active::after {
+            transform: rotate(180deg);
+        }
+        
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out;
+            background: white;
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .content.active {
+            max-height: 2000px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-top: none;
+        }
+        
+        .video-title {
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin: 20px 0 10px 0;
+            padding-left: 10px;
+            border-left: 4px solid #2c3e50;
+        }
+        
+        .video-container {
+            margin: 15px 0;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        video {
+            width: 100%;
+            max-width: 640px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .collapsible {
+                margin: 10px;
+            }
+            
+            .toggle {
+                padding: 12px 15px;
+                font-size: 1em;
+            }
+        }
