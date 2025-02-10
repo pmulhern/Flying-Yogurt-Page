@@ -22,7 +22,6 @@
     
     <title>Contact The Band</title>
 </head>
-
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -32,20 +31,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About The Band <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="performances.html">Live Performances</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact The Band</a>
-                </li>
+                <li class="nav-item active"><a class="nav-link" href="index.html">About The Band <span class="sr-only">(current)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="performances.html">Live Performances</a></li>
+                <li class="nav-item"><a class="nav-link" href="calendar.html">Upcoming Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact The Band</a></li>
             </ul>
         </div>
     </nav>
-
-    <br> <br>
 
     <!-- Main Content -->
     <main class="card mb-4 mx-auto" id="contact" style="max-width: 800px;">
@@ -53,10 +45,10 @@
             <h5 class="card-title text-center">Contact Me</h5>
             <hr>
             <div class="form-group">
-                <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name" required>
+                <input type="text" class="form-control mb-4" placeholder="Name" required>
             </div>
             <div class="form-group">
-                <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail" required>
+                <input type="email" class="form-control mb-4" placeholder="E-mail" required>
             </div>
             <div class="form-group">
                 <label for="contactSubject">Subject</label>
@@ -65,64 +57,62 @@
                     <option value="1">Hire the Band</option>
                     <option value="2">Play a Gig with the Band</option>
                     <option value="3">General Inquiry</option>
-                    <!-- <option value="4">Report a Bug</option> -->
                 </select>
             </div>
             <div class="form-group">
-                <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message" required></textarea>
+                <textarea class="form-control rounded-0" rows="3" placeholder="Message" required></textarea>
             </div>
             <button class="btn btn-info btn-block" type="submit">Send</button>
         </form>
     </main>
 
- <!-- Footer -->
-<!-- Add text-white class to these elements in your footer -->
-<footer style="background-color: #2c3e50;" class="page-footer font-small blue-grey lighten-5 text-white" id="sticky_footer">
-    <div class="container py-4">
-        <!-- Contact Information -->
-        <div class="row">
-            <div class="col-md-4">
-                <h6 class="text-uppercase font-weight-bold text-white">Contact Information</h6>
-                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p class="text-white">
-                    <i class="fas fa-home mr-3"></i> Philadelphia and Surrounding Areas
-                </p>
-                <p class="text-white">
-                    <i class="fas fa-envelope mr-3"></i> Music@FlyingYogurt.com
-                </p>
-                <p class="text-white">
-                    <i class="fas fa-phone mr-3"></i> (215) 813-4817
-                </p>
-            </div>
-
-            <!-- Hire the Band Section -->
-            <div class="col-md-4">
-                <h6 class="text-uppercase font-weight-bold text-white">Hire the Band!</h6>
-                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p>
-                    <a class="text-white" href="#">Private Parties</a>
-                </p>
-                <p>
-                    <a class="text-white" href="#">Bar/ Pub Entertainment</a>
-                </p>
-                <p>
-                    <a class="text-white" href="#">Special Events</a>
-                </p>
-                <p>
-                    <a class="text-white" href="#">No Specific Reason At All!</a>
-                </p>
-            </div>
-
-            <!-- Social Media Section -->
-            <div class="col-md-4 text-center text-md-left">
-                <h6 class="text-uppercase font-weight-bold text-white">Connect on Social Networks!</h6>
-                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                <p class="text-white">
-                    <a href="#" class="text-white"><i class="fab fa-facebook-f mr-3"></i> Facebook</a>
-                </p>
-                <p class="text-white">
-                   
-
+    <!-- Footer -->
+    <footer style="background-color: #2c3e50;" class="page-footer font-small blue-grey lighten-5 text-white" id="sticky_footer">
+        <div class="container py-4">
+            <!-- Contact Information -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-uppercase font-weight-bold text-white">Contact Information</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-white">
+                        <i class="fas fa-home mr-3"></i> Philadelphia and Surrounding Areas
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-envelope mr-3"></i> Music@FlyingYogurt.com
+                    </p>
+                    <p class="text-white">
+                        <i class="fas fa-phone mr-3"></i> (215) 813-4817
+                    </p>
+                </div>
+    
+                <!-- Hire the Band Section -->
+                <div class="col-md-4">
+                    <h6 class="text-uppercase font-weight-bold text-white">Hire the Band!</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="text-white" href="#">Private Parties</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#">Bar/ Pub Entertainment</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#">Special Events</a>
+                    </p>
+                    <p>
+                        <a class="text-white" href="#">Because you want to Rock Out!</a>
+                    </p>
+                </div>
+    
+                <!-- Social Media Section -->
+                <div class="col-md-4 text-center text-md-left">
+                    <h6 class="text-uppercase font-weight-bold text-white">Connect on Social Networks!</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-white">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f mr-3"></i> Facebook</a>
+                    </p>
+                    <p class="text-white">
+                       
+    </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
