@@ -121,7 +121,7 @@ body {
         }
         
         .content.active {
-            max-height: 2000px;
+            max-height: 20000px;
             padding: 20px;
             border: 1px solid #e0e0e0;
             border-top: none;
