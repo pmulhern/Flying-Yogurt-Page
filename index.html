@@ -33,6 +33,44 @@
         </div>
     </nav>
 
+    <main class="card mx-auto mt-4 p-4" style="max-width: 800px;">
+        <!-- Promo Video Section -->
+        <section class="promo-video my-4 text-center">
+            <div class="container position-relative">
+                <!-- Section Title -->
+                <h2 class="font-weight-bold mb-4" style="font-size: 2rem;">
+                    🎸 Turn It Up: <span style="color: #e49739;">The Flying Yogurt Experience</span>
+                </h2>
+    
+                <!-- Video -->
+                <video
+                    id="promoVideo"
+                    class="w-100 rounded"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    controls
+                    aria-label="Flying Yogurt Promo Video"
+                >
+                    <source src="./Assets/FlyingYogurt_Promo1_Rough1.mp4" type="video/mp4">
+                    <source src="./Assets/FlyingYogurt_Promo1_Rough1.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+    
+                <!-- Unmute Button -->
+                <button
+                    id="unmuteBtn"
+                    class="btn btn-warning btn-sm"
+                    style="position: absolute; top: 10px; left: 10px;"
+                    aria-label="Unmute video"
+                >
+                    🔊 Unmute
+                </button>
+            </div>
+        </section>
+    </main>
+    
     <!-- Main Content -->
 <!-- Main Content -->
 <main class="card mx-auto mt-4 p-4" style="max-width: 800px;">
@@ -206,6 +244,17 @@
     </footer>
 
     <!-- Scripts -->
+    <script>
+        const video = document.getElementById('promoVideo');
+        const unmuteBtn = document.getElementById('unmuteBtn');
+    
+        unmuteBtn.addEventListener('click', () => {
+            video.muted = false;
+            video.play();
+            unmuteBtn.style.display = 'none';
+        });
+    </script>
+    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
