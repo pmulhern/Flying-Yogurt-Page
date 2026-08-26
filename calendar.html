@@ -1,340 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Flying Yogurt - Calendar of Events</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
-    <!-- ✅ Custom Responsive Styles -->
-    <style>
-      @media (max-width: 576px) {
-        table thead {
-          display: none;
-        }
-  
-        table, table tbody, table tr, table td {
-          display: block;
-          width: 100%;
-        }
-  
-        table tr {
-          margin-bottom: 1rem;
-          border-bottom: 2px solid #ddd;
-        }
-  
-        table td {
-          text-align: right;
-          padding-left: 50%;
-          position: relative;
-        }
-  
-        table td::before {
-          content: attr(data-label);
-          position: absolute;
-          left: 0;
-          width: 50%;
-          padding-left: 1rem;
-          font-weight: bold;
-          text-align: left;
-        }
-  
-        .card {
-          padding: 1rem;
-        }
-  
-        .navbar-brand {
-          font-size: 1.2rem;
-        }
-  
-        .section-title {
-          font-size: 1.1rem;
-        }
-  
-        footer p {
-          font-size: 0.9rem;
-        }
-      }
-    </style>
-  </head>
-  
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Flying Yogurt</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">About The Band</a></li>
-          <li class="nav-item"><a class="nav-link" href="performances.html">Live Performances</a></li>
-          <li class="nav-item"><a class="nav-link" href="calendar.html">Upcoming Events</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    
-    <div class="container mt-5">
-      <div class="card p-4">
-        <h2 class="text-center">Upcoming Events</h2>
-        <div class="table-responsive">
-          <table class="table table-striped mt-4">
-            <!-- <thead>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upcoming Events | Flying Yogurt</title>
+  <meta name="description" content="See where Flying Yogurt is playing next around the Philadelphia area.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/web/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="Assets/web/favicon-192.png">
+  <link rel="apple-touch-icon" href="Assets/web/favicon-192.png">
+  <meta name="theme-color" content="#0b0b0d">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Upcoming Events | Flying Yogurt">
+  <meta property="og:description" content="See where Flying Yogurt is playing next around the Philadelphia area.">
+  <meta property="og:image" content="https://flyingyogurt.com/Assets/web/band-hero.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Come See Us Live</span>
+          <h1>Upcoming Events</h1>
+        </div>
+
+        <div class="events-table-wrap">
+          <table class="events">
+            <thead>
               <tr>
                 <th>Date</th>
                 <th>Venue</th>
                 <th>Location</th>
                 <th>Time</th>
-                <th>Additional Info</th>
+                <th>Info</th>
               </tr>
-            </thead> -->
+            </thead>
             <tbody>
-
-              <!-- <div class="card p-4">
-                <h2 class="text-center">Upcoming Events</h2> -->
-              
-                <!-- Gigs Section -->
-                <h3 class="mt-4">🎸 Gigs</h3>
-                <div class="table-responsive">
-                  <table class="table table-striped mt-2">
-                    <thead>
-                      <tr>
-                        <th>Date</th>
-                        <th>Venue</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Additional Info</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <!-- <tr>
-                        <td>Sat, Oct 4</td>
-                        <td>Barrel Splitters</td>
-                        <td>Philadelphia, PA</td>
-                        <td>7:00 PM to 10:00 PM</td>
-                        <td><a href="https://www.barrelsplitters.com/" target="_blank">Venue Website</a></td>
-                      </tr> -->
-                      <!-- <tr>
-                        <td>Sat, Oct 18</td>
-                        <td>Bucks County Brewery</td>
-                        <td>Pipersville, PA</td>
-                        <td>3:00 PM to 6:00 PM</td>
-                        <td><a href="https://buckscountybrewery.com/" target="_blank">Venue Website</a></td>
-                      </tr>
-                      <tr>
-                        <td>Sat, Nov 1</td>
-                        <td>The SoundPlex</td>
-                        <td>Pensauken, NJ</td>
-                        <td>5:00 PM to 10:00 PM</td>
-                        <td><a href="https://soundplexstudios.com" target="_blank">Venue Website</a></td>
-                      </tr>
-                      <tr>
-                        <td>Sat, Dec 13</td>
-                        <td>Celtic Cross </td>
-                        <td>Philadelphia, PA</td>
-                        <td>8:00 PM to 11:00 PM</td>
-                        <td><a href="https://the-celtic-cross.edan.io/" target="_blank">Venue Information</a></td>
-                      </tr> -->
-                      <!-- <tr>
-                        <td>***RESCHEDULED*** <br> Sat, Jan 24</td>
-                        <td>***RESCHEDULED*** <br> Puck Live by Great Barn </td>
-                        <td>***RESCHEDULED*** <br> Doylestown, PA</td>
-                        <td>***RESCHEDULED*** <br> 8:00 PM to 11:00 PM</td>
-                        <td><a href="https://www.puck-live.com/" target="_blank">Venue Website</a></td>
-                      </tr> -->
-                      <!-- <tr>
-                        <td>Thur, Mar 19</td>
-                        <td>Twisted Gingers </td>
-                        <td>Ambler, PA</td>
-                        <td>7:00 to 9:30 PM</td>
-                        <td><a href="https://www.ridgehallambler.com/twisted-gingers-brewing/" target="_blank">Venue Website</a></td>
-                      </tr>
-                      <tr>
-                        <td>Fri, Mar 27</td>
-                        <td>Greater Kensignton String Band</td>
-                        <td>Philadelphia, PA</td>
-                        <td>8:00 to 11:30 PM</td>
-                        <td><a href="https://www.gksb.org/" target="_blank">Venue Website</a></td>
-                      </tr> -->
-                      <!-- <tr>
-                        <td>Sat, May 30</td>
-                        <td>Puck Live by Great Barn </td>
-                        <td>Doylestown, PA</td>
-                        <td>4:00 to 7:00 PM</td>
-                        <td><a href="https://www.puck-live.com/" target="_blank">Venue Website</a></td>
-                      </tr> -->
-                      <!-- <tr>
-                        <td>Fri, Aug 7</td>
-                        <td>First Friday in Ambler</td>
-                        <td>Ambler, PA</td>
-                        <td>6:00 PM to 9:00 PM</td>
-                        <td><a href="https://amblermainstreet.org/first-fridays-in-ambler/#start_date=2026-07-09;categories=677684688" target="_blank">Venue Website</a></td>
-                      </tr> -->
-                      <tr>
-                        <td>Sat, Sep 12</td>
-                        <td>Puck Live by Great Barn </td>
-                        <td>Doylestown, PA</td>
-                        <td>4:00 to 7:00 PM</td>
-                        <td><a href="https://www.puck-live.com/" target="_blank">Venue Website</a></td>
-                      </tr>
-                      <tr>
-                        <td>Fri, Oct 16</td>
-                        <td>Greater Kensignton String Band</td>
-                        <td>Philadelphia, PA</td>
-                        <td>8:00 PM to 11:00 PM</td>
-                        <td><a href="https://www.gksb.org/" target="_blank">Venue Website</a></td>
-                      </tr>
-                      <tr>
-                        <td>Sat, Dec 5</td>
-                        <td>The Royal Music & Arts Center</td>
-                        <td>Glenside, PA</td>
-                        <td>8:00 PM to 11:00 PM</td>
-                        <td><a href="https://www.theroyalglenside.com/" target="_blank">Venue Website</a></td>
-                      </tr>
-                    <!-- </tr>
-                      <td>May, June & July</td>
-                      <td>Bucks County Brewing, Barrel Splitters, <br> Celtic Cross and more!! <br> </td>
-                      <td>TBD</td>
-                      <td>TBD</td>
-                      <td><a href="" target="_blank"></a></td>
-                    </tr> --> 
-
-                      
-                    </tbody>
-                  </table>
-                </div>
-              
-                <!-- Open Mic Section
-                <h3 class="mt-5">🎤 Open Mics</h3>
-                <div class="table-responsive">
-                  <table class="table table-striped mt-2">
-                    <thead>
-                      <tr>
-                        <th>Date</th>
-                        <th>Venue</th>
-                        <th>Location</th>
-                        <th>Time</th>
-                        <th>Additional Info</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Mon, Sep 22</td>
-                        <td>Celtic Cross <br> Flying Yogurt Hosted Open Mic</td>
-                        <td>Philadelphia, PA</td>
-                        <td>7:00 PM to 10:00 PM</td>
-                        <td><a href="https://the-celtic-cross.edan.io/" target="_blank">Venue Information</a></td>
-                      </tr>
-                      <tr>
-                        <td>Mon, Oct 6</td>
-                        <td>Celtic Cross <br> Flying Yogurt Hosted Open Mic</td>
-                        <td>Philadelphia, PA</td>
-                        <td>7:00 PM to 10:00 PM</td>
-                        <td><a href="https://the-celtic-cross.edan.io/" target="_blank">Venue Information</a></td>
-                      </tr>
-                      <tr>
-                        <td>Mon, Oct 20</td>
-                        <td>Celtic Cross <br> Flying Yogurt Hosted Open Mic</td>
-                        <td>Philadelphia, PA</td>
-                        <td>7:00 PM to 10:00 PM</td>
-                        <td><a href="https://the-celtic-cross.edan.io/" target="_blank">Venue Information</a></td>
-                      </tr>
-                      <tr>
-                        <td>Mon, Nov 3</td>
-                        <td>Celtic Cross <br> Flying Yogurt Hosted Open Mic</td>
-                        <td>Philadelphia, PA</td>
-                        <td>7:00 PM to 10:00 PM</td>
-                        <td><a href="https://the-celtic-cross.edan.io/" target="_blank">Venue Information</a></td>
-                      </tr>
-                      <tr>
-                        <td>Mon, Nov 17</td>
-                        <td>Celtic Cross <br> Flying Yogurt Hosted Open Mic</td>
-                        <td>Philadelphia, PA</td>
-                        <td>7:00 PM to 10:00 PM</td>
-                        <td><a href="https://the-celtic-cross.edan.io/" target="_blank">Venue Information</a></td>
-                      </tr>
-                      <tr>
-                        <td>Mon, Nov 27</td>
-                        <td>Celtic Cross <br> Flying Yogurt Hosted Open Mic</td>
-                        <td>Philadelphia, PA</td>
-                        <td>7:00 PM to 10:00 PM</td>
-                        <td><a href="https://the-celtic-cross.edan.io/" target="_blank">Venue Information</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div> -->
-              
-
-    <br> <br>
-
-  <footer style="background-color: #2c3e50;" class="page-footer font-small blue-grey lighten-5 text-white" id="sticky_footer">
-    <div class="container py-4">
-      <!-- Contact Information -->
-      <div class="row text-center text-md-left">
-        
-        <!-- Column 1: Contact Information -->
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <h6 class="text-uppercase font-weight-bold text-white section-title">Contact Information</h6>
-          <hr class="teal accent-3 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p class="text-white">
-            <i class="fas fa-home mr-3"></i> Philadelphia and Surrounding Areas
-          </p>
-          <p class="text-white">
-            <i class="fas fa-envelope mr-3"></i> Music@FlyingYogurt.com
-          </p>
-          <p class="text-white">
-            <i class="fas fa-phone mr-3"></i> (215) 813-4817
-          </p>
+              <tr>
+                <td data-label="Date"><strong>Sat, Sep 12</strong></td>
+                <td data-label="Venue">Puck Live by Great Barn</td>
+                <td data-label="Location">Doylestown, PA</td>
+                <td data-label="Time">4:00 &ndash; 7:00 PM</td>
+                <td data-label="Info"><a href="https://www.puck-live.com/" target="_blank" rel="noopener">Venue Website</a></td>
+              </tr>
+              <tr>
+                <td data-label="Date"><strong>Fri, Oct 16</strong></td>
+                <td data-label="Venue">Greater Kensington String Band</td>
+                <td data-label="Location">Philadelphia, PA</td>
+                <td data-label="Time">8:00 &ndash; 11:00 PM</td>
+                <td data-label="Info"><a href="https://www.gksb.org/" target="_blank" rel="noopener">Venue Website</a></td>
+              </tr>
+              <tr>
+                <td data-label="Date"><strong>Sat, Dec 5</strong></td>
+                <td data-label="Venue">The Royal Music &amp; Arts Center</td>
+                <td data-label="Location">Glenside, PA</td>
+                <td data-label="Time">8:00 &ndash; 11:00 PM</td>
+                <td data-label="Info"><a href="https://www.theroyalglenside.com/" target="_blank" rel="noopener">Venue Website</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-  
-        <!-- Column 2: Hire the Band -->
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <h6 class="text-uppercase font-weight-bold text-white section-title">Hire the Band!</h6>
-          <hr class="teal accent-3 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p><a class="text-white" href="#">Private Parties</a></p>
-          <p><a class="text-white" href="#">Bar/ Pub Entertainment</a></p>
-          <p><a class="text-white" href="#">Special Events</a></p>
-          <p><a class="text-white" href="#">Because you want to Rock Out!</a></p>
-        </div>
-  
-        <!-- Column 3: Social Media -->
-        <div class="col-12 col-md-4 mb-4 mb-md-0">
-          <h6 class="text-uppercase font-weight-bold text-white section-title">Connect on Social Networks!</h6>
-          <hr class="teal accent-3 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p class="text-white">
-            <a href="https://www.facebook.com/profile.php?id=61573280450635" class="text-white">
-              <i class="fab fa-facebook-f"></i> Facebook
-            </a>
-          </p>
-          <p class="text-white">
-            <a href="https://www.instagram.com/flyingyogurtband/" class="text-white">
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
-          </p>
-          <p class="text-white">
-            <a href="https://www.youtube.com/@FlyingYogurtBand" class="text-white">
-              <i class="fab fa-youtube"></i> YouTube
-            </a>
-          </p>
-          <p class="text-white">
-            <a href="https://www.tiktok.com/@flyingyogurt?_t=ZT-8toBO36W6R8&_r=1" class="text-white">
-              <i class="fab fa-tiktok"></i> TikTok
-            </a>
-          </p>
-        </div>
-  
+
+        <p class="form-note">Want us at your venue or event? <a href="contact.html?subject=Play%20a%20Gig">Get in touch</a>.</p>
       </div>
-    </div>
-  </footer>
-  
+    </section>
+  </main>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
-  </body>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="js/main.js" defer></script>
+</body>
 </html>
