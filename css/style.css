@@ -164,6 +164,10 @@ button {
   margin-bottom: 0;
 }
 
+.section-head--spaced {
+  margin-top: 56px;
+}
+
 .section--alt {
   background: var(--bg-alt);
   border-top: 1px solid var(--border);
@@ -713,6 +717,60 @@ button {
   margin: 0;
   opacity: 0.9;
   font-size: 0.95rem;
+}
+
+/* ---------- repertoire / set list ---------- */
+.repertoire-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 760px) {
+  .repertoire-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .repertoire-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.repertoire-item {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+
+.repertoire-item .song {
+  display: block;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+.repertoire-item .artist {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.repertoire-item--more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-style: dashed;
+  border-color: var(--accent);
+  background: transparent;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent-light);
 }
 
 /* ---------- events table ---------- */

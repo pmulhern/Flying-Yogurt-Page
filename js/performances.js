@@ -131,4 +131,77 @@
   if (target) {
     target.innerHTML = VENUES.map(venueBlock).join("");
   }
+
+  var SETLIST = [
+    { song: "Across the Universe", artist: "The Beatles" },
+    { song: "Back in the U.S.S.R.", artist: "The Beatles" },
+    { song: "Ballroom Blitz", artist: "Sweet" },
+    { song: "Basket Case", artist: "Green Day" },
+    { song: "Beat It", artist: "Michael Jackson" },
+    { song: "Born to Be Wild", artist: "Steppenwolf" },
+    { song: "Can't Get Enough", artist: "Original" },
+    { song: "Closing Time", artist: "Semisonic" },
+    { song: "Crazy Train", artist: "Ozzy Osbourne" },
+    { song: "Day Tripper", artist: "The Beatles" },
+    { song: "Don't You (Forget About Me)", artist: "Simple Minds" },
+    { song: "Doorbell Dixie", artist: "Original" },
+    { song: "Dream On", artist: "Aerosmith" },
+    { song: "Enter Sandman", artist: "Metallica" },
+    { song: "Eruption", artist: "Van Halen" },
+    { song: "Gimme Some Lovin'", artist: "Spencer Davis Group" },
+    { song: "Girls on Film", artist: "Duran Duran" },
+    { song: "Good Riddance", artist: "Green Day" },
+    { song: "Green Onions", artist: "Booker T. & the M.G.'s" },
+    { song: "Green River", artist: "Creedence Clearwater Revival" },
+    { song: "Heartbreaker", artist: "Led Zeppelin" },
+    { song: "Hey Jude", artist: "The Beatles" },
+    { song: "Holiday", artist: "Green Day" },
+    { song: "I've Just Seen a Face", artist: "The Beatles" },
+    { song: "Iron Man", artist: "Black Sabbath" },
+    { song: "It's So Easy", artist: "Guns N' Roses" },
+    { song: "Jet Airliner", artist: "Steve Miller Band" },
+    { song: "Joker and the Thief", artist: "Wolfmother" },
+    { song: "La Grange", artist: "ZZ Top" },
+    { song: "Let It Be", artist: "The Beatles" },
+    { song: "Living Loving Maid", artist: "Led Zeppelin" },
+    { song: "Lonely Is the Night", artist: "Billy Squier" },
+    { song: "Lookin' Out My Back Door", artist: "Creedence Clearwater Revival" },
+    { song: "Love Shack", artist: "The B-52's" },
+    { song: "Money for Nothing", artist: "Dire Straits" },
+    { song: "Mr. Soul", artist: "Buffalo Springfield" },
+    { song: "No Rain", artist: "Blind Melon" },
+    { song: "Ohio", artist: "Crosby, Stills, Nash & Young" },
+    { song: "Old Man Down the Road", artist: "John Fogerty" },
+    { song: "Paranoid", artist: "Black Sabbath" },
+    { song: "Pump It Up", artist: "Elvis Costello" },
+    { song: "Rock'n Me", artist: "Steve Miller Band" },
+    { song: "Run Through the Jungle", artist: "Creedence Clearwater Revival" },
+    { song: "Santeria", artist: "Sublime" },
+    { song: "(I Can't Get No) Satisfaction", artist: "The Rolling Stones" },
+    { song: "Seek and Destroy", artist: "Metallica" },
+    { song: "She's So High", artist: "Tal Bachman" },
+    { song: "Stranglehold", artist: "Ted Nugent" },
+    { song: "The Middle", artist: "Jimmy Eat World" },
+    { song: "Thunderstruck", artist: "AC/DC" },
+    { song: "War Pigs", artist: "Black Sabbath" },
+    { song: "What I Like About You", artist: "The Romantics" },
+    { song: "Your Love", artist: "The Outfield" },
+  ];
+
+  function repertoireItem(entry) {
+    return (
+      '<div class="repertoire-item"><span class="song">' +
+      entry.song +
+      '</span><span class="artist">' +
+      entry.artist +
+      "</span></div>"
+    );
+  }
+
+  var setlistTarget = document.getElementById("setlist");
+  if (setlistTarget) {
+    setlistTarget.innerHTML =
+      SETLIST.map(repertoireItem).join("") +
+      '<div class="repertoire-item repertoire-item--more">&amp; Many More</div>';
+  }
 })();
